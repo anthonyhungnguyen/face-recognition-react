@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Navigation() {
 	return (
 		<nav>
-			<div>Face Recognition App</div>
+			<div className='nav_appname'>Face Recognition App</div>
 			<ul>
 				<li>
 					<Link to='/'>Home</Link>

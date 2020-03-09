@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Photo from './components/photo'
-import Webcam from './components/webcam'
+import Camera from './components/webcam'
 import Home from './components/home'
 import Navigation from './components/navigation'
 import * as faceapi from 'face-api.js'
@@ -13,7 +13,9 @@ function App() {
 	}, [])
 	const loadModels = async () => {
 		const MODEL_URL = process.env.PUBLIC_URL + '/models'
-		await faceapi.loadSsdMobilenetv1Model(MODEL_URL)
+		await faceapi.loadTinyFaceDetectorModel(MODEL_URL)
+		await faceapi.loadFaceLandmarkModel(MODEL_URL)
+		await faceapi.loadFaceExpressionModel(MODEL_URL)
 	}
 
 	return (
@@ -27,7 +29,7 @@ function App() {
 					<Photo />
 				</Route>
 				<Route path='/camera'>
-					<Webcam />
+					<Camera />
 				</Route>
 			</Switch>
 		</Router>

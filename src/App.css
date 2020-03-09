@@ -6,6 +6,15 @@
 	font-size: 100%;
 }
 
+.nav_appname {
+	padding: 2em;
+	font-weight: bold;
+	background: black;
+	color: white;
+	margin: 1em;
+	font-size: 1.2em;
+}
+
 .photo_canvas {
 	display: block;
 	margin: auto;
@@ -15,6 +24,13 @@
 	display: block;
 	margin: auto;
 	padding: 0.5em;
+}
+
+.video_detect_button {
+	margin: auto;
+	display: block;
+	padding: 0.5em;
+	border: 1px solid black;
 }
 
 nav {
@@ -30,5 +46,9 @@ li {
 	padding: 1em;
 	margin: auto;
 	text-decoration: none;
-	background: #123;
+	background: black;
+}
+
+a {
+	color: white;
 }

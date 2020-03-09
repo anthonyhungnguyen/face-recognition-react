@@ -9086,6 +9086,11 @@ react-scripts@3.4.0:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-webcam@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-webcam/-/react-webcam-5.0.0.tgz#d038176ccca054c9f8e2ec232b6d2c754de14b02"
+  integrity sha512-q0IzkXPtKQ/lHvhfeYQNjhmvwC2ItpquN0vPsIXcZDvrXn8c+cMszkNeS2i5/tDhjVUEIoS5Al0ZEhyrmQ4I3A==
+
 react@^16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.0.tgz#d046eabcdf64e457bbeed1e792e235e1b9934cf7"
